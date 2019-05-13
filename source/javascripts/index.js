@@ -4,3 +4,5 @@ import $ from 'jquery';
 
 
 $('.sidenav').sidenav();
+$('.materialboxed').materialbox();
+$('.modal').modal();
