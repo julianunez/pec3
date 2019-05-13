@@ -6,6 +6,9 @@ activate :external_pipeline,
   source: ".tmp/webpack_output",
   latency: 1
 
+configure :development do
+  activate :livereload
+end
 
 configure :build do
   activate :minify_html
