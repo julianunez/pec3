@@ -16,7 +16,9 @@
   </head>
   <body>
     <%= partial "/partials/header" %>
+    <%= yield_content :hero %>
     <%= yield %>
+    <%= partial "/partials/footer" %>
     <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "all" %>
