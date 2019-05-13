@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js
+
+PATH: 
+  /Users/juanjo/.rvm/gems/ruby-2.6.2/bin:/Users/juanjo/.rvm/gems/ruby-2.6.2@global/bin:/Users/juanjo/.rvm/rubies/ruby-2.6.2/bin:/Users/juanjo/.rvm/bin:/Users/juanjo/.npm-packages/bin:/Users/juanjo/.npm-packages/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Applications/MAMP/bin/php/php5.4.34/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/bin/s3cmd:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/git/bin:/usr/local/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/juanjo/sites/pec3/package.json: Unexpected token } in JSON at position 584
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "pec3",
+    "version": "1.0.0",
+    "description": "Diseña tu interfaz",
+    "main": "index.js",
+    "repository": "https://github.com/julianunez/pec3.git",
+    "author": "Julia <jnunezcal@uoc.edu>",
+    "license": "MIT",
+    "scripts": {
+      "build:assets": "NODE_ENV=production webpack -p --config webpack.prod.config.js",
+      "build": "bundle exec middleman build",
+      "start:assets": "NODE_ENV=development webpack --watch --config webpack.dev.config.js",
+      "start": "bundle exec middleman server"
+    },
+    "dependencies": {
+      "bulma": "^0.7.2",
+      "materialize-css": "1.0.0",
+    },
+    "devDependencies": {
+      "babel-core": "^6.18.2",
+      "babel-loader": "^6.2.9",
+      "babel-preset-es2015": "^6.18.0",
+      "concurrently": "^3.1.0",
+      "css-loader": "^0.26.1",
+      "extract-text-webpack-plugin": "^1.0.1",
+      "import-glob-loader": "^1.1.0",
+      "node-sass": "^3.13.0",
+      "sass-loader": "^4.0.2",
+      "style-loader": "^0.13.1",
+      "webpack": "^1.14.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
